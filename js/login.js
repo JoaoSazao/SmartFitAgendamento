@@ -50,3 +50,7 @@ function showNotification(type, message, duration = 5000) {
     toast.remove();
   }, duration);
 }
+
+document.getElementById("btnAdquirirPlano").addEventListener("click", function () {
+  window.location.href = "adquirir-plano.html";
+});

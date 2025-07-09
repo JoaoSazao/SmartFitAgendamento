@@ -1,3 +1,3 @@
 <?php
-$senhaCriptografada = password_hash("123456", PASSWORD_DEFAULT);
+$senhaCriptografada = password_hash("Smart@Fit@dmin", PASSWORD_DEFAULT);
 echo $senhaCriptografada;

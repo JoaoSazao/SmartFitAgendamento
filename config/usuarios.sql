@@ -7,5 +7,15 @@ CREATE TABLE usuarios (
 );
 
 INSERT INTO usuarios (nome, email, senha)
-VALUES ('João da Silva', 'joao@email.com', '$2y$12$eVSoJ8rReJqtHINNb0E4vubqwYnavGmTbyIJvaiF0GZxIf7opvODK'); -- substitua pelo hash real
+VALUES ('SmartFitAdmin', 'smartadm@smartfit.com', '$2y$12$qzEOJiT38Jc6K5QQIBLRSO1XDRIz9WN7jrz6mGyQywRhKhnLAvDXq'); -- substitua pelo hash real
 
+CREATE TABLE pagamentos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome_cartao VARCHAR(100),
+  numero_cartao VARCHAR(20),
+  validade VARCHAR(7),
+  cvv VARCHAR(4),
+  plano_escolhido VARCHAR(20),
+  valor DECIMAL(10,2),
+  data_pagamento TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
